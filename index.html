@@ -331,6 +331,12 @@
             h1::after {
                 right: -30px;
             }
+            
+            /* Mobile countdown adjustment */
+            .countdown-value {
+                font-size: 1.8rem !important;
+                padding: 8px 12px !important;
+            }
         }
 
         .event-card {
@@ -462,7 +468,7 @@
             text-shadow: 0 0 5px rgba(139, 69, 19, 0.1);
         }
 
-        /* Countdown Timer Styles */
+        /* Countdown Timer Styles - 15% smaller digits */
         .countdown-container {
             margin: 35px 0;
             text-align: center;
@@ -512,11 +518,11 @@
 
         .countdown-value {
             font-family: 'Cinzel', monospace;
-            font-size: 2.8rem;
+            font-size: 2.38rem; /* Reduced by 15% from 2.8rem */
             font-weight: 700;
             background: linear-gradient(135deg, var(--gold), var(--gold-light));
             color: var(--cream);
-            padding: 12px 18px;
+            padding: 10px 15px; /* Slightly reduced padding to match smaller font */
             border-radius: 10px;
             margin-bottom: 8px;
             box-shadow: 
